@@ -100,7 +100,6 @@ Use the MyCrypto GUI wallet to connect to the node with the exposed RPC port.
 ![](Images/mycrypto_home.jpg)
 You will need to use a custom network, and include the chain ID, and use ETH as the currency.
 
-![](Images/mycrypto_home.jpg)
 ![](Images/mycrypto_chngnetwk.jpg)
 ![](Images/mycrypto_addnode.jpg)
 ![](Images/mycrypto_custnode.jpg)
