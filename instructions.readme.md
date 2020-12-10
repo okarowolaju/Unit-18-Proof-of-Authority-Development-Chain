@@ -20,3 +20,29 @@ Next, you will need to download Go Ethereum Tools and download @ https://geth.et
  - Follow along on the command prompts and enter your private key to your wallet when asked. It will pre-populate with the 0x prefix
  ![](Images/instructions_configure_new_genesis.jpg)
  
+ - At the end you will need to export your genesis configurations .  We will be using the "recondo2.json" file.  
+ 
+ # Initialize and configure the nodes 
+  - Use geth to initalize the nodes by running the following commands :
+     
+      ./geth init recondo2.json --datadir node1
+      
+   You should see this message 
+   ![](Images/genesis_state.jpg)
+   
+   -  Run the same command for node2
+
+      ./geth init recondo2.json --datadir node2
+     
+     
+   - Run the first node, unlock the account, enable mining, and the RPC flag. Only one node needs RPC enabled.
+
+
+   - Set a different peer port for the second node and use the first node's enode address as the bootnode flag.
+
+
+   - Be sure to unlock the account and enable mining on the second node!
+
+
+You should now see both nodes producing new blocks, congratulations!
+     
