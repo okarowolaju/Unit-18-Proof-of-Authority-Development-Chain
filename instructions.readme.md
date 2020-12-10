@@ -79,8 +79,6 @@ Now you will launch the second node and configure it to let us talk to the chain
 
 Scroll up in the terminal window where node1 is running, and copy the entire enode:// address (including the last @address:port segment) of the first node located in the Started P2P Networking line:
  ![](Images/sel_enode.jpg)
-
-
 We will need this address to tell the second node where to find the first node.
 Open another terminal window and navigate to the same directory as before.
 
