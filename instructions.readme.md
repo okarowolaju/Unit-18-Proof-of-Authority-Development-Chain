@@ -94,3 +94,22 @@ Copy this command into your notes and call it Start Node 2.
 
 You should now see both nodes producing new blocks, congratulations!
      
+# Send a test transaction 
+
+Use the MyCrypto GUI wallet to connect to the node with the exposed RPC port.
+![](Images/mycrypto_home.jpg)
+You will need to use a custom network, and include the chain ID, and use ETH as the currency.
+
+![](Images/mycrypto_home.jpg)
+![](Images/mycrypto_chngnetwk.jpg)
+![](Images/mycrypto_addnode.jpg)
+![](Images/mycrypto_custnode.jpg)
+
+
+Import the keystore file from the node1/keystore directory into MyCrypto. This will import the private key.
+Send a transaction from the node1 account to the node2 account.
+Copy the transaction hash and paste it into the "TX Status" section of the app, or click "TX Status" in the popup.
+Screenshot the transaction metadata (status, tx hash, block number, etc) and save it to your Screenshots folder.
+
+![](Images/cryptosend_success.jpg)
+Celebrate, you just created a blockchain and sent a transaction!
