@@ -16,3 +16,7 @@ Next, you will need to download Go Ethereum Tools and download @ https://geth.et
  ![](Images/instructions_start_puppeth.jpg)
  
   We decided on recondo2
+
+ - Follow along on the command prompts and enter your private key to your wallet when asked. It will pre-populate with the 0x prefix
+ ![](Images/instructions_configure_new_genesis.jpg)
+ 
