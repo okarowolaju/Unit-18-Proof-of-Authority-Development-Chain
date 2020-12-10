@@ -91,12 +91,6 @@ The output of the second node should show information about Importing block segm
 ![](Images/import_block_seg.jpg)
 Copy this command into your notes and call it Start Node 2.
 
-   - Run the first node, unlock the account, enable mining, and the RPC flag. Only one node needs RPC enabled.
-   - Set a different peer port for the second node and use the first node's enode address as the bootnode flag.
-
-
-   - Be sure to unlock the account and enable mining on the second node!
-
 
 You should now see both nodes producing new blocks, congratulations!
      
