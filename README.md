@@ -1,5 +1,6 @@
-# Unit-18-Proof-of-Authority-Development-Chain
+# Blockchain Proof-of-Authority-Development-Chain
 
+We will need to setup a private testnet to experiment with blockchain technology. 
 
 For this assignment, you will take on the role of a new developer at a small bank.
 Your mission, should you choose to accept it, will be to set up a testnet blockchain for your organization.
@@ -19,7 +20,7 @@ Write instructions on how to use the chain for the rest of your team.
 
 
 
-Background
+# Background
 You have just landed a new job at ZBank, a small, innovative bank that is interested in exploring what
 blockchain technology can do for them and their customers.
 Your first project at the company is to set up a private testnet that you and your team of developers
