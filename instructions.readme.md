@@ -60,9 +60,38 @@ This will output something like:
       ./geth init recondo2.json --datadir node2
      
      
+ # Activating the block chain
+ 
+  -  Launch the first node with the following command : 
+     ./geth --datadir node1 --mine --minerthreads 1
+     
+     The --mine flag tells the node to mine new blocks.
+
+     The --minerthreads flag tells geth how many CPU threads, or "workers" to use during mining. Since our difficulty is low, we can set it to 1.
+
+     You should see the node Committing new mining work:
+     
+  ![](Images/first_node_mining.jpg)
+   
+    Copy this command into your notes and label it Start Node 1.
+
+Now you will launch the second node and configure it to let us talk to the chain via RPC.
+
+Scroll up in the terminal window where node1 is running, and copy the entire enode:// address (including the last @address:port segment) of the first node located in the Started P2P Networking line:
+ ![](Images/self_enode.jpg)
+
+
+We will need this address to tell the second node where to find the first node.
+Open another terminal window and navigate to the same directory as before.
+
+./geth --datadir node2 --port 30304 --rpc --bootnodes "enode://<replace with node1 enode address>" --ipcdisable
+
+The output of the second node should show information about Importing block segments and synchronization:
+
+![](Images/import_block_seg.jpg)
+Copy this command into your notes and call it Start Node 2.
+
    - Run the first node, unlock the account, enable mining, and the RPC flag. Only one node needs RPC enabled.
-
-
    - Set a different peer port for the second node and use the first node's enode address as the bootnode flag.
 
 
